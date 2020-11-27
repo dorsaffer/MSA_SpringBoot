@@ -1,0 +1,4 @@
+FROM openjdk:15
+EXPOSE 8089
+ADD /target/Candidate-0.0.1-SNAPSHOT.jar docker-candidate-service.jar
+ENTRYPOINT ["java","-jar","docker-candidate-service.jar"]
